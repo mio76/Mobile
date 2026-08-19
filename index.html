@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мої програми для мобільних пристроїв</title>
+  <link rel="icon" href="mio.png">
+  <style>    
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      margin: 0;
+      padding: 20px; 
+    }
+
+    h1 {
+      font-size: 2.5em;
+      background: linear-gradient(90deg, #2575fc, #ee0979); 
+      background-clip: text; 
+      color: transparent;
+      margin: 15px 0;
+      text-align: center;
+    }
+
+    /* Панель навігації */
+    .nav-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      background: #fff;
+      padding: 10px;
+      border-bottom: 2px solid #ccc;
+      border-radius: 0 0 20px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .nav-bar a img {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+    .nav-bar a img:hover {
+      transform: scale(1.2);
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 300px;
+      padding: 20px;
+      text-align: center;
+      scroll-margin-top: 80px;
+    }
+    .imgs {
+      max-width: 150px;
+      margin-bottom: 10px;
+    }
+    .card h2 {
+      font-size: 28px;
+      color: rebeccapurple;
+      margin: 10px 0;
+    }
+    .card p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    .download-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #007bff;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .download-btn:hover {
+      background: #0056b3;
+    }
+
+    .footer-note {  
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      border-top: 2px solid #ccc;
+      text-align: center;
+      font-family: sans-serif;
+      padding: 10px 0;
+    }
+
+    @media (max-width: 768px) {
+  html {
+    scroll-padding-top: 60px; /* більше відступу для мобільного, бо навбар у два рядки */
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    scroll-padding-top: 60px; /* ще більше для дуже маленьких екранів */
+  }
+}
+  </style>
+</head>
+<body>
+  <!-- Панель навігації -->
+  <div class="nav-bar">
+    <a href="#magic-note"><img src="img/magic-note.png" title="Magic note"></a>
+    <a href="#magic-note-2"><img src="img/magic-note-2.png" title="Magic note 2"></a>
+    <a href="#mango-pad"><img src="img/mango-pad.png" title="Mangopad"></a>
+    <a href="#language-puzzles"><img src="img/language-puzzles.png" title="Language puzzles"></a>
+    <a href="#language-puzzles-pro"><img src="img/language-puzzles-pro.png" title="Language puzzles pro"></a>
+    <a href="#mp3-player"><img src="img/mp3-player.png" title="MP3 Player"></a>
+    <a href="#nine-teen"><img src="img/nine-teen.png" title="Дев'ятнашки"></a>
+    <a href="#editor-html"><img src="img/editor-html.png" title="Editor html"></a>
+    <a href="#fast-reader"><img src="img/fast-reader.png" title="Швидкочитання"></a>
+    <a href="#weather"><img src="img/weather.png" title="Погода"></a>
+    <a href="#biorhythms"><img src="img/biorhythms.png" title="Біоритми"></a>
+    <a href="#wave-sand-small"><img src="img/wave-sand-small.png" title="Релакс"></a>
+
+  </div>
+
+  <h1>ПРОГРАМИ ДЛЯ МОБІЛЬНИХ ПРИСТРОЇВ</h1>
+  <div class="container">
+    
+    <!-- magic-note -->
+    <div class="card" id="magic-note">
+      <img src="img/magic-note.png" alt="Логотип програми" class="imgs">
+      <h2>Magic note</h2>
+      <p>Записник нотатків. Має функції додати, видалити, зберегти архів. Додатково: кольорова гра для розвиненя інтуїції, помічник штучного інтелекту. Приємний інтерфейс з анімацією переходу на інші сторінки.</p>
+      <a href="https://mio76.github.io/magic-note/" class="download-btn">Завантажити</a>
+    </div>
+
+    <!-- magic-note-2 -->
+    <div class="card" id="magic-note-2">
+      <img src="img/magic-note-2.png" alt="Логотип програми" class="imgs">
+      <h2>Magic note 2</h2>
+      <p>Вдосконалений Записник нотатків. Повністю перероблена версія зі спрощеним інтерфейсом. Має ті ж властивості як і попередній, але без зайвих речей. Має напівпрозорий інтерфейс.</p>
+      <a href="https://mio76.github.io/magic-note-2/" class="download-btn">Завантажити</a>
+    </div>
+
+    <!-- mango-pad -->
+    <div class="card" id="mango-pad">
+      <img src="img/mango-pad.png" alt="Логотип програми" class="imgs">
+      <h2>Mangopad</h2>
+      <p>Це класична гра, де потрібно ловити манго під час падіння. Великі плоди приносять по 10 балів, а невпіймані не зменшують рахунок - головне, щоб не впали на голову, бо це може коштувати одного серця.</p>
+      <a href="https://mio76.github.io/mango-pad/" class="download-btn">Завантажити</a>
+    </div>
+
+    <!-- language-puzzles -->
+    <div class="card" id="language-puzzles">
+      <img src="img/language-puzzles.png" alt="Логотип програми" class="imgs">
+      <h2>Language puzzles</h2>
+      <p>Ця програма для тих, хто не знайшов ефективного способу вивчення мов. З нею ви можете збирати речення й промовляти слова вголос, щоб почати розмовляти. Відкрийте в собі цей потенціал!</p>
+      <a href="https://mio76.github.io/language-puzzles/" class="download-btn">Завантажити</a>
+    </div>
+
+    <!-- language-puzzles Pro -->
+    <div class="card" id="language-puzzles-pro">
+      <img src="img/language-puzzles-pro.png" alt="Логотип програми" class="imgs">
+      <h2>Language puzzles Pro</h2>
+      <p>Це вдосконалена версія вивчення мов. Крім англійської, французської, німецької додана польська. Побільшало найчастіше вживаних речень. З'явилася кнопка "Турбо" для кращого вивчення слів.</p>
+      <a href="https://mio76.github.io/language-puzzles-neo/" class="download-btn">Завантажити</a>
+    </div>
+
+    <!-- mp3-player -->
+    <div class="card" id="mp3-player">
+      <img src="img/mp3-player.png" alt="Логотип програми" class="imgs">
+      <h2>mp3 Player</h2>
+      <p>Зручний MP3-плеєр. Дозволяє насолоджуватися улюбленою музикою без зайвих налаштувань. Є вкладка плейлист. Можна слухати музику без пауз - плавний перехід від однієї пісні до іншої.</p>
+      <a href="https://mio76.github.io/mp3-player/" class="download-btn">Завантажити</a>
+    </div>
+
+     <!-- Дев'ятнашки -->
+    <div class="card" id="nine-teen">
+      <img src="img/nine-teen.png" alt="Логотип програми" class="imgs">
+      <h2>Дев'ятнашки</h2>
+      <p>Дев’ятнашки - це розширена версія гри «п’ятнашки» з 19 плитками на полі 4x5 або 5×4. Мета - впорядкувати числа, пересуваючи плитки у порожню клітинку, зробивши якомога меньше ходів. Просто, але затягує!.</p>
+      <a href="https://mio76.github.io/nine-teen/" class="download-btn">Завантажити</a>
+    </div>
+
+     <!-- editor-html -->
+    <div class="card" id="editor-html">
+      <img src="img/editor-html.png" alt="Логотип програми" class="imgs">
+      <h2>Editor html</h2>
+      <p>Простий конструктор сайтів зі збереженням у сторінку формата html. Легко додавати текст, фото, кнопки з вибором кольору або градієнту. Можна вставляти навіть готові скопійовані частини з сайтів.</p>
+      <a href="https://mio76.github.io/editor-html/" class="download-btn">Завантажити</a>
+    </div>
+
+     <!-- fast-reader -->
+    <div class="card" id="fast-reader">
+      <img src="img/fast-reader.png" alt="Логотип програми" class="imgs">
+      <h2>Швидкочитання</h2>
+      <p>Програма для швидкого читання TXT та FB2. Відкрийте файл - і слова почнуть з’являтися на екрані в ритмі, який ви самі оберете. Регулюйте швидкість, розмір і кількість слів для комфортного читання.</p>
+      <a href="https://mio76.github.io/fast-reader/" class="download-btn">Завантажити</a>
+    </div>
+
+    <!-- weather -->
+    <div class="card" id="weather">
+      <img src="img/weather.png" alt="Логотип програми" class="imgs">
+      <h2>Погода</h2>
+      <p>Хочете знати прогноз погоди не тільки на сьогодні, а й на найближчий тиждень з ймовірністю опадів? Ця програма допоможе! Оновлення відбувається кожні 15 хвилин, потрібен лише Інтернет.</p>
+      <a href="https://mio76.github.io/weather/" class="download-btn">Завантажити</a>
+    </div>
+
+     <!-- Біоритми -->
+    <div class="card" id="biorhythms">
+      <img src="img/biorhythms.png" alt="Логотип програми" class="imgs">
+      <h2>Біоритми</h2>
+      <p>Програма, що показує стан людини: фізичний, емоційний та інтелектуальний. Вона будує графік за датою народження й допомагає зрозуміти, коли краще планувати активність, навчання чи відпочинок.</p>
+      <a href="https://mio76.github.io/biorhythms/" class="download-btn">Завантажити</a>
+    </div>
+
+     <!-- Расслабуха -->
+    <div class="card" id="wave-sand-small">
+      <img src="img/wave-sand-small.png" alt="Логотип програми" class="imgs">
+      <h2>Релакс</h2>
+      <p>Все для релаксу і заспокоєння. Можна взагалі нічого не робити, а просто слухати шум моря. Або дивитись як рухаються крабик, зірка і гойдається пальма. Чи малювати на піску і ганяти краба.</p>
+      <a href="https://mio76.github.io/wave-sand/" class="download-btn">Завантажити</a>
+    </div>
+
+    <footer class="footer-note">
+      <strong>Усі програми створені Овсієнко І.М.</strong><br>
+      Працюють на будь-якому пристрої з браузером.
+    </footer>
+  </div>
+</body>
+</html>
